@@ -277,6 +277,7 @@ footer {
     margin: 20px 50px;
     box-shadow: 0 4px 8px rgba(224, 135, 2, 0.568);
 }
+
 .about-us-section h2 {
     font-size: 30px;
     color: #FF5733;
@@ -290,6 +291,7 @@ footer {
     margin: 20px 50px;
     box-shadow: 0 4px 8px rgba(224, 135, 2, 0.568);
 }
+
 .team-section h2 {
     font-size: 30px;
     color: #FF5733;
@@ -303,6 +305,7 @@ footer {
     margin: 20px 50px;
     box-shadow: 0 4px 8px rgba(224, 135, 2, 0.568);
 }
+
 .values-section h2 {
     font-size: 30px;
     color: #FF5733;
@@ -347,6 +350,7 @@ footer {
     margin: 20px 50px;
     box-shadow: 0 4px 8px rgba(224, 135, 2, 0.568);
 }
+
 .contact-us-section h2 {
     font-size: 30px;
     color: #FF5733;
@@ -391,7 +395,7 @@ footer {
     background-color: #FFFFFF;
     border-radius: 10px;
     padding: 50px 0;
-    margin-top: 70px ;
+    margin-top: 70px;
     box-shadow: 0 4px 8px rgba(224, 135, 2, 0.568);
 }
 
@@ -403,6 +407,7 @@ footer {
     margin: 20px 50px;
     box-shadow: 0 4px 8px rgba(224, 135, 2, 0.568);
 }
+
 .experiences-section h2 {
     font-size: 30px;
     color: #FF5733;
@@ -417,6 +422,7 @@ footer {
     margin: 20px 50px;
     box-shadow: 0 4px 8px rgba(224, 135, 2, 0.568);
 }
+
 .events-section h2 {
     font-size: 30px;
     color: #FF5733;
@@ -431,6 +437,7 @@ footer {
     margin: 20px 50px;
     box-shadow: 0 4px 8px rgba(224, 135, 2, 0.568);
 }
+
 .classes-section h2 {
     font-size: 30px;
     color: #FF5733;
@@ -442,17 +449,26 @@ footer {
 
     header {
         flex-direction: column;
+        flex-wrap: wrap;
         text-align: center;
     }
 
     nav li {
         display: block;
+        margin: 0;
         margin: 10px 0;
     }
 
+    .nav {
+        display: grid;
+    }
+
     nav {
-        justify-content: center;
-        gap: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0;
+        margin: 10px 0;
     }
 
     nav a {
@@ -490,8 +506,12 @@ footer {
 @media (min-width: 601px) and (max-width: 1024px) {
     header {
         padding: 15px 40px;
+        display: flex;
     }
 
+    .nav {
+        display: grid;
+    }
 
     .intro {
         padding: 40px;
